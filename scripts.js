@@ -33,14 +33,17 @@ const catalog = [
   },
   { category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7' },
 ];
-let maxPrice = null;
+const maxPrice = null;
 
-document.querySelector('input').addEventListener('keyup', event => {
-  maxPrice = event.target.value;
-  console.log(maxPrice);
-});
-
-function filterCatalog(catalogItems) {
-  return catalogItems.filter(({ price }) => price.slice(1) <= maxPrice);
+function filterCatalog(catalogItems, thePrice) {
+  return catalogItems.filter(({ price }) => price.slice(1) <= thePrice);
 }
-const filterResult = filterCatalog(catalog);
+const filterResult = filterCatalog(catalog, maxPrice);
+console.log(filterResult);
+
+function renderCatalog(listItems) {
+  ul.innerHTML = listItems
+    .map(({ name, price }) => `<li>${name} ${price}</li>`)
+    .join('');
+}
+renderCatalog(filterResult);
