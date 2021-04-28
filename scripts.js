@@ -33,7 +33,12 @@ const catalog = [
   },
   { category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7' },
 ];
-const maxPrice = null;
+let maxPrice = null;
+
+document.querySelector('input').addEventListener('keyup', event => {
+  maxPrice = event.target.value;
+  console.log(maxPrice);
+});
 
 function filterCatalog(catalogItems) {
   return catalogItems.filter(({ price }) => price.slice(1) <= maxPrice);
