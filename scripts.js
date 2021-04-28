@@ -1,3 +1,4 @@
+const ul = document.body.appendChild(document.createElement('ul'));
 const catalog = [
   {
     category: 'Sporting Goods',
