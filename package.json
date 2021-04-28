@@ -1,5 +1,5 @@
 {
-  "name": "front-end-starter",
+  "name": "render-function",
   "version": "1.1.0",
   "private": true,
   "description": "A starter template repo for 'front-end' students",
@@ -12,7 +12,7 @@
     "html-css-js",
     "student"
   ],
-  "author": "Manav Misra",
+  "author": "Efoe Gnassia",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.14",
