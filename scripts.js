@@ -1,4 +1,5 @@
 const ul = document.body.appendChild(document.createElement('ul'));
+
 const catalog = [
   {
     category: 'Sporting Goods',
@@ -32,3 +33,9 @@ const catalog = [
   },
   { category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7' },
 ];
+const maxPrice = null;
+
+function filterCatalog(catalogItems) {
+  return catalogItems.filter(({ price }) => price.slice(1) <= maxPrice);
+}
+const filterResult = filterCatalog(catalog);
