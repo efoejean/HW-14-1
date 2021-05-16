@@ -12,7 +12,7 @@
 
 ## Overview
 
-- During the creating of this App , I practiced how to use two different functions to have a desired results.
+- I practiced how to use two different functions to have a desired results.
 - I have improved my skills in write call back functions
 
 ### Built With
